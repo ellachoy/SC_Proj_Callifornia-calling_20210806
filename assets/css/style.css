@@ -237,19 +237,21 @@ header div:nth-child(3) {
   right: 15em;
   z-index: 999;
 }
-#circle {
+#circle img {
   position: absolute;
-  top: -10em;
+  top: -55em;
   right: -95em;
-  width: 120%;
-  animation: rotate 3s linear infinite;
+  width: 130%;
+
+  /* height: 30vh; */
+  animation: rotate 7s linear infinite;
 }
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotateZ(360deg);
   }
 }
 .poppy article {
@@ -288,7 +290,6 @@ footer article:nth-of-type(2) div:nth-child(2) img {
 }
 #banner {
   background-color: #fff;
-  font-size: 7.2em;
   -webkit-text-stroke: 1px #000;
   /* transform: translate(50px, -650px); */
   /* transform: translateX(300px);
@@ -297,15 +298,19 @@ footer article:nth-of-type(2) div:nth-child(2) img {
   position: absolute;
   right: -550px;
   top: 470px;
+}
+#banner p {
+  font-size: 7em;
+  font-family: "LarishNeue";
   animation: move 3s linear infinite;
 }
 @keyframes move {
-  /* 0% {
-    transform: translateX(80px);
+  0% {
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(120px);
-  } */
+    transform: translateX(180px);
+  }
 }
 
 #banner span {
