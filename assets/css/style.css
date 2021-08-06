@@ -181,6 +181,11 @@ header div:nth-child(3) {
   right: 22em;
   z-index: 999;
 }
+/* for tablett version*/
+.action2 {
+  visibility: hidden;
+  display: none;
+}
 /*** bear ***/
 .bear,
 .poppy {
@@ -330,6 +335,9 @@ footer article:nth-of-type(2) {
   justify-content: space-between;
   align-items: center;
 }
+footer article:nth-of-type(1) h6 {
+  margin-bottom: 20px;
+}
 footer a {
   width: 30%;
   margin-bottom: 6em;
@@ -349,16 +357,85 @@ footer article:nth-of-type(2) div:last-child {
 
 /* Farbe: #fff / #000 */
 
-/*** smartphone ***/
-@media screen and (max-width: 600px) {
-  body {
-    /* background-color: mediumseagreen; */
-  }
-}
-
-/* tablet */
+/*** tablet ****/
 @media screen and (max-width: 768px) {
   body {
-    /* background-color: orange; */
+    background-color: orange;
+  }
+  /* general effect */
+  h1,
+  h2,
+  h4 {
+    font-size: 4em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  h6,
+  h5,
+  p {
+    font-size: 1em;
+  }
+
+  /*** header ***/
+  header div:nth-child(2) h2 {
+    line-height: 50px;
+  }
+  a {
+    height: 3vh;
+    font-size: 1em;
+  }
+  /*** wildfires ***/
+  .wildfires h1:nth-child(1) {
+    font-size: 2.2em;
+  }
+  .wildfires .map {
+    width: 60%;
+    height: 30vh;
+  }
+  .wildfires article .report {
+    padding-top: 8%;
+  }
+  .wildfires article .report h1 {
+    font-size: 2.2em;
+  }
+  /*** action ***/
+  .action {
+    visibility: hidden;
+    display: none;
+  }
+  .action2 {
+    visibility: visible;
+    display: block;
+    padding: 5% 0 1% 0;
+  }
+
+  .action2 .B {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(7, 250px);
+    justify-content: end;
+    gap: 0.5em;
+  }
+  .action2 .B img {
+    width: 100%;
+    animation: move 10s linear infinite;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(1000px);
+    }
+  }
+  .action2 div p {
+    font-size: 12px;
+    width: 50%;
+    margin: 3% auto;
   }
 }
