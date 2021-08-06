@@ -355,8 +355,6 @@ footer article:nth-of-type(2) div:last-child {
   padding-left: 20em;
 }
 
-/* Farbe: #fff / #000 */
-
 /*** tablet ****/
 @media screen and (max-width: 768px) {
   body {
