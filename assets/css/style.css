@@ -358,7 +358,7 @@ footer article:nth-of-type(2) div:last-child {
 /*** tablet ****/
 @media screen and (max-width: 768px) {
   body {
-    background-color: orange;
+    /* background-color: orange; */
   }
   /* general effect */
   h1,
@@ -421,7 +421,7 @@ footer article:nth-of-type(2) div:last-child {
   }
   .action2 .B img {
     width: 100%;
-    animation: move 10s linear infinite;
+    animation: move 7s linear infinite;
   }
   @keyframes move {
     0% {
@@ -435,5 +435,132 @@ footer article:nth-of-type(2) div:last-child {
     font-size: 12px;
     width: 50%;
     margin: 3% auto;
+  }
+  /*** bear ***/
+  .bear,
+  .poppy {
+    padding: 3% 5%;
+  }
+  .bear h1,
+  .poppy h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .bear article div:nth-of-type(2),
+  .poppy article div:nth-of-type(2) {
+    padding-left: 0%;
+  }
+  .bear h4,
+  .poppy h4 {
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .bear h5,
+  .poppy h5 {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .bear div img:first-child,
+  .poppy div img:last-child {
+    width: 53%;
+  }
+  .bear div img:last-child,
+  .poppy div img:first-child {
+    width: 25%;
+  }
+  .bear article,
+  .poppy article {
+    display: block;
+  }
+  .bear article h6,
+  .poppy article h6 {
+    margin-bottom: 10px;
+  }
+  .bear article,
+  .poppy article {
+    margin-bottom: 30%;
+  }
+  .bear #Gbear {
+    top: 17em;
+    left: 9em;
+  }
+  .bear #Gbear img:last-child {
+    top: 3em;
+    right: 10em;
+  }
+  #circle img {
+    width: 30%;
+    left: 35em;
+    top: -3em;
+  }
+  .poppy #p_bear img:first-child {
+    bottom: 10%;
+    left: 10em;
+    z-index: 999;
+    width: 20%;
+    top: 33em;
+  }
+  .poppy {
+    padding: 10%;
+  }
+  .poppy #p_bear img:last-child {
+    right: 20%;
+    top: 28em;
+    bottom: 8em;
+    width: 40%;
+    z-index: 999;
+  }
+  /*** footer ***/
+
+  footer ul li img {
+    height: 1vh;
+  }
+  footer article:nth-of-type(2) div:nth-child(2) img {
+    width: 20%;
+  }
+  #banner {
+    right: -170px;
+    top: 150px;
+  }
+  #banner p {
+    font-size: 2em;
+    animation: move 2s linear infinite;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(50px);
+    }
+  }
+  footer article div:nth-child(1) {
+    width: 50%;
+  }
+  footer article div:nth-child(1) h4 {
+    line-height: 1em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+  footer article:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer article:nth-of-type(1) h6 {
+    margin-bottom: 20px;
+  }
+  footer a {
+    width: 15%;
+    margin-bottom: 0.5em;
+    font-size: 0.5em;
+  }
+  footer h6 {
+    font-size: 0.5em;
+  }
+
+  footer article:nth-of-type(2) div:first-child h6 {
+    margin-bottom: 5px;
   }
 }
