@@ -305,15 +305,15 @@ footer article:nth-of-type(2) div:nth-child(2) img {
 #banner p {
   font-size: 7em;
   font-family: "LarishNeue";
-  animation: move 3s linear infinite;
+  animation: move 2s linear infinite;
 }
 
 @keyframes move {
   0% {
-    transform: translateX(0px);
+    transform: translateX(1px);
   }
   100% {
-    transform: translateX(180px);
+    transform: translateX(100px);
   }
 }
 
