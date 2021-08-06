@@ -234,24 +234,24 @@ header div:nth-child(3) {
 .bear #Gbear img:last-child {
   position: absolute;
   top: 15em;
-  right: 15em;
+  right: 13em;
   z-index: 999;
 }
 #circle img {
+  width: 30%;
   position: absolute;
-  top: -55em;
-  right: -95em;
-  width: 130%;
-
-  /* height: 30vh; */
+  left: 79em;
+  top: -8em;
+}
+#circle img {
   animation: rotate 7s linear infinite;
 }
 @keyframes rotate {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotateZ(360deg);
+    transform: rotate(360deg);
   }
 }
 .poppy article {
@@ -299,11 +299,15 @@ footer article:nth-of-type(2) div:nth-child(2) img {
   right: -550px;
   top: 470px;
 }
+#banner span {
+  color: #000;
+}
 #banner p {
   font-size: 7em;
   font-family: "LarishNeue";
   animation: move 3s linear infinite;
 }
+
 @keyframes move {
   0% {
     transform: translateX(0px);
@@ -313,9 +317,6 @@ footer article:nth-of-type(2) div:nth-child(2) img {
   }
 }
 
-#banner span {
-  color: #000;
-}
 footer article div:nth-child(1) {
   width: 40%;
 }
