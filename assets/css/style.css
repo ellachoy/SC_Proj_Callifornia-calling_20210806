@@ -315,10 +315,13 @@ footer article:nth-of-type(2) div:nth-child(2) img {
 
 @keyframes move {
   0% {
-    transform: translateX(1px);
+    transform: translateX(50px);
   }
+  /* 50% {
+    transform: translateX(200px);
+  } */
   100% {
-    transform: translateX(100px);
+    transform: translateX(-100px);
   }
 }
 
@@ -425,10 +428,11 @@ footer article:nth-of-type(2) div:last-child {
   }
   @keyframes move {
     0% {
-      transform: translateX(0px);
+      transform: translateX(-100px);
     }
+
     100% {
-      transform: translateX(1000px);
+      transform: translateX(100px);
     }
   }
   .action2 div p {
@@ -497,12 +501,25 @@ footer article:nth-of-type(2) div:last-child {
     left: 35em;
     top: -3em;
   }
+  .poppy {
+    margin-bottom: 15%;
+  }
   .poppy #p_bear img:first-child {
     bottom: 10%;
-    left: 10em;
+    left: 12em;
     z-index: 999;
     width: 20%;
     top: 33em;
+    animation: right 10s linear infinite;
+  }
+  @keyframes right {
+    0% {
+      transform: translateY(0px);
+    }
+
+    100% {
+      transform: translateX(100px);
+    }
   }
   .poppy {
     padding: 10%;
@@ -512,7 +529,7 @@ footer article:nth-of-type(2) div:last-child {
     top: 28em;
     bottom: 8em;
     width: 40%;
-    z-index: 999;
+    /* z-index: 999; */
   }
   /*** footer ***/
 
@@ -528,11 +545,16 @@ footer article:nth-of-type(2) div:last-child {
   }
   #banner p {
     font-size: 2em;
-    animation: move 2s linear infinite;
+    animation: move 3s linear infinite;
   }
   @keyframes move {
-    0% {
+    0%,
+    100% {
       transform: translateX(50px);
+    }
+
+    50% {
+      transform: translateX(100px);
     }
   }
   footer article div:nth-child(1) {
